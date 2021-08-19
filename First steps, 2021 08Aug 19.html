@@ -18563,7 +18563,15 @@ Total is 100</code></pre>
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span> 
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">total</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="n">s</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">&#39;Enter a string: &#39;</span><span class="p">)</span>
+
+<span class="n">numbers</span> <span class="o">=</span> <span class="n">s</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>  <span class="c1"># return  a list of strings, cutting on whitespace</span>
+
+<span class="k">for</span> <span class="n">one_number</span> <span class="ow">in</span> <span class="n">numbers</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">one_number</span><span class="o">.</span><span class="n">isdigit</span><span class="p">():</span>  <span class="c1"># string method that indicates if content is 0-9 only</span>
+        <span class="n">total</span>
 </pre></div>
 
      </div>
