@@ -18791,7 +18791,7 @@ Total is 208
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[126]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[127]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">vowels</span> <span class="o">=</span> <span class="p">[]</span>
@@ -18808,8 +18808,8 @@ Total is 208
     <span class="k">else</span><span class="p">:</span>
         <span class="n">others</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">one_character</span><span class="p">)</span>
         
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;,&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">vowels</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;,&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">digits</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;,&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">vowels</span><span class="p">))</span>   <span class="c1"># create a new string with glue &#39;,&#39; and elements vowels, then print</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;,&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">digits</span><span class="p">))</span>   <span class="c1"># same thing, but with digits</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;,&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">others</span><span class="p">))</span>
 </pre></div>
 
@@ -18830,10 +18830,10 @@ Total is 208
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>Enter a string: hello! 1234
-e,o
-1,2,3,4
-h,l,l,!, 
+<pre>Enter a string: hello 1234!
+e*o
+1*2*3*4
+h*l*l* *!
 </pre>
 </div>
 </div>
@@ -18851,9 +18851,29 @@ h,l,l,!,
 <li>Ask the user to enter a sentence.</li>
 <li>Break the sentence apart into words.</li>
 <li>Translate each word into Pig Latin, and append the result to <code>output</code>.</li>
+<li>Use <code>join</code> to turn <code>output</code> into a single string, our result.</li>
 </ol>
 
 </div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">word</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">&#39;Enter a wod: &#39;</span><span class="p">)</span>
+
+<span class="k">if</span> <span class="n">word</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="ow">in</span> <span class="s1">&#39;aeiou&#39;</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">word</span> <span class="o">+</span> <span class="s1">&#39;way&#39;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">word</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span> <span class="o">+</span> <span class="n">word</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="s1">&#39;ay&#39;</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
 </div>
 </body>
 
