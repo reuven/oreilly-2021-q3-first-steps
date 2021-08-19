@@ -18557,10 +18557,10 @@ Total is 100</code></pre>
 
 </div>
 
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[120]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">total</span> <span class="o">=</span> <span class="mi">0</span>
@@ -18568,10 +18568,98 @@ Total is 100</code></pre>
 <span class="n">s</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">&#39;Enter a string: &#39;</span><span class="p">)</span>
 
 <span class="n">numbers</span> <span class="o">=</span> <span class="n">s</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>  <span class="c1"># return  a list of strings, cutting on whitespace</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;numbers = </span><span class="si">{</span><span class="n">numbers</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
 
 <span class="k">for</span> <span class="n">one_number</span> <span class="ow">in</span> <span class="n">numbers</span><span class="p">:</span>
-    <span class="k">if</span> <span class="n">one_number</span><span class="o">.</span><span class="n">isdigit</span><span class="p">():</span>  <span class="c1"># string method that indicates if content is 0-9 only</span>
-        <span class="n">total</span>
+    <span class="k">if</span> <span class="n">one_number</span><span class="o">.</span><span class="n">isdigit</span><span class="p">():</span>  <span class="c1"># string method that indicates if characters are 0-9 only</span>
+        <span class="n">total</span> <span class="o">+=</span> <span class="nb">int</span><span class="p">(</span><span class="n">one_number</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Ignoring non-numeric </span><span class="si">{</span><span class="n">one_number</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+        
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Total is </span><span class="si">{</span><span class="n">total</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>        
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>Enter a string: 10 100 50 3 help 45
+numbers = [&#39;10&#39;, &#39;100&#39;, &#39;50&#39;, &#39;3&#39;, &#39;help&#39;, &#39;45&#39;]
+Ignoring non-numeric help
+Total is 208
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[121]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># we&#39;ve now seen how we can go from a string to a list</span>
+<span class="c1"># how about the other direction -- how do we create a string from a list?</span>
+
+<span class="n">mylist</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;abcd&#39;</span><span class="p">,</span> <span class="s1">&#39;efgh&#39;</span><span class="p">,</span> <span class="s1">&#39;ijklm&#39;</span><span class="p">]</span>
+
+<span class="c1"># I can create a new string based on mylist, joining them together with </span>
+<span class="c1"># a &quot;glue&quot; string, using the &quot;join&quot; method:</span>
+
+<span class="s1">&#39;**&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">mylist</span><span class="p">)</span>  <span class="c1"># return a string with element of mylist joined with &quot;**&quot;</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[121]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>&#39;abcd**efgh**ijklm&#39;</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span> 
 </pre></div>
 
      </div>
