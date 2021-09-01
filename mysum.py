@@ -7,3 +7,8 @@ def sum_numbers(*numbers):
         total += one_number
 
     return total
+
+
+print(sum_numbers(10, 20, 30))
+print(sum_numbers(10.5, 20, 30))
+print(sum_numbers('a', 'b', 30))
