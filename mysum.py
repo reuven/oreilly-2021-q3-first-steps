@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 def sum_numbers(*numbers: float) -> float:
-    total = 0
+    total: float = 0
 
     for one_number in numbers:
         total += one_number
@@ -10,5 +10,5 @@ def sum_numbers(*numbers: float) -> float:
 
 
 print(sum_numbers(10, 20, 30))
-print(sum_numbers(10.5, 20, 30))
-print(sum_numbers('a', 'b', 30))
+# print(sum_numbers(10.5, 20, 30))
+# print(sum_numbers('a', 'b', 30))
