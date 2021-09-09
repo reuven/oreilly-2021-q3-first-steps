@@ -13,6 +13,7 @@ def count_vowels(filename):
 # In Python, I can load it with
 #    import vowels
 
-# Inside of the file, I defined a function called "count_vowels"
-# When I "import vowels" in Python, this function is available
-# as "vowels.
+# Inside of the file, I defined a function called "count_vowels" When
+# I "import vowels" in Python, this function is available as
+# "vowels.count_vowels".  Because we're accessing a module's function
+# via the module object.
