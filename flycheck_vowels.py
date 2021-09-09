@@ -8,6 +8,8 @@ def count_vowels(filename):
 
     return count
 
+if __name__ == '__main__':
+    print(count_vowels
 
 
 # This is the file vowels.py
