@@ -9,6 +9,11 @@ def count_vowels(filename):
     return count
 
 
+if __name__ == '__main__':
+    s = input('Enter a string: ').strip()
+    print(count_vowels(s))
+
+
 # This is the file vowels.py
 # In Python, I can load it with
 #    import vowels
