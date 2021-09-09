@@ -16,4 +16,4 @@ def hello(name):
     return f'Hello from mymod, {name}!'
 
 
-print('Goodbye from mymod!')
+print(f'Goodbye from {__name__}!')
