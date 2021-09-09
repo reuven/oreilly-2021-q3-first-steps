@@ -19,3 +19,5 @@ def hello(name):
 
 if __name__ == '__main__':
     print(f'Goodbye from {__name__}!')
+
+# Emacs
